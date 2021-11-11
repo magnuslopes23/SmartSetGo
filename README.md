@@ -1,2 +1,0 @@
-# SmartSetGo
-LMS
