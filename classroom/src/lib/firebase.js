@@ -2,12 +2,12 @@ import firebase from "firebase";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyATOkzZ8M03JDlexVfextL5fkPTW7jhL6Q",
-  authDomain: "yt-classroom-clone.firebaseapp.com",
-  projectId: "yt-classroom-clone",
-  storageBucket: "yt-classroom-clone.appspot.com",
-  messagingSenderId: "170227524980",
-  appId: "1:170227524980:web:78806688690ce40a7d3821",
+  apiKey: "AIzaSyCS3sA_GhR9zv1pt6Td2Gwrvai64CO9cCo",
+  authDomain: "smartsetgo-dc513.firebaseapp.com",
+  projectId: "smartsetgo-dc513",
+  storageBucket: "smartsetgo-dc513.appspot.com",
+  messagingSenderId: "833272805099",
+  appId: "1:833272805099:web:61cde22d4f866a3fc3b0ae"
 };
 
 firebase.initializeApp(firebaseConfig);
