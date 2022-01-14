@@ -2,12 +2,13 @@ import firebase from "firebase";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCS3sA_GhR9zv1pt6Td2Gwrvai64CO9cCo",
-  authDomain: "smartsetgo-dc513.firebaseapp.com",
-  projectId: "smartsetgo-dc513",
-  storageBucket: "smartsetgo-dc513.appspot.com",
-  messagingSenderId: "833272805099",
-  appId: "1:833272805099:web:61cde22d4f866a3fc3b0ae"
+  apiKey: "AIzaSyB0ZQ7cgewbe5k8uKKg0_xfC4kz44RwrJs",
+  authDomain: "smartsetgo-41a2d.firebaseapp.com",
+  projectId: "smartsetgo-41a2d",
+  storageBucket: "smartsetgo-41a2d.appspot.com",
+  messagingSenderId: "875488494808",
+  appId: "1:875488494808:web:51e55babe5a801220d83ad",
+  measurementId: "G-KBKPY3D4MZ"
 };
 
 firebase.initializeApp(firebaseConfig);

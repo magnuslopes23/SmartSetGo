@@ -11,6 +11,7 @@ import React from "react";
 import { CreateClass, JoinClass } from "..";
 import { useLocalContext } from "../../context/context";
 import { useStyles } from "./style";
+import logo from "../../assets/smartsetgo.png";
 
 const Header = ({ children }) => {
   const classes = useStyles();
@@ -43,8 +44,10 @@ const Header = ({ children }) => {
           <div className={classes.headerWrapper}>
             {children}
             <img
-              src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+              src={logo}
               alt="Classroom"
+              width={50}
+              height={50}
             />
             <Typography variant="h6" className={classes.title}>
               Classroom
