@@ -36,6 +36,7 @@ function App() {
       return () => unsubscribe();
     }
   }, [loggedInMail]);
+  // console.log("classes",createdClasses);
   return (
     <Router>
       <Switch>

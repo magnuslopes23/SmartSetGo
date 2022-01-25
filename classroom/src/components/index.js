@@ -6,3 +6,5 @@ export { default as Login } from "./Login/Login";
 export { default as JoinedClasses } from "./JoinedClasses/JoinedClasses";
 export { default as Main } from "./Main/Main";
 export { default as Announcment } from "./Announcment/Announcment";
+export { default as LectureNotes } from "./LectureNotes/LectureNotes";
+export { default as PostVideo } from "./PostVideo/PostVideo";
