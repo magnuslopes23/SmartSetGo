@@ -6,7 +6,7 @@ from datetime import datetime
 
 # from PIL import ImageGrab
 
-path = 'Training images'
+path = './training_images'
 images = []
 classNames = []
 myList = os.listdir(path)
