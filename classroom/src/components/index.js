@@ -8,3 +8,4 @@ export { default as Main } from "./Main/Main";
 export { default as Announcment } from "./Announcment/Announcment";
 export { default as LectureNotes } from "./LectureNotes/LectureNotes";
 export { default as PostVideo } from "./PostVideo/PostVideo";
+export { default as Assignments } from "./Assignmnets/Assignments";
