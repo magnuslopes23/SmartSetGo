@@ -22,7 +22,7 @@ const Assignment = ({ classData }) => {
                 .child(image.name)
                 .getDownloadURL()
                 .then((url) => {
-                    db.collection("notes")
+                    db.collection("assignment")
                         .doc("classes")
                         .collection(classData.id)
                         .add({
