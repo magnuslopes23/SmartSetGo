@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import db from "../../lib/firebase";
 import "./style.css";
 const PostVideo = ({ classData }) => {
-  const [postVideo, setPostVideo] = useState([]);
+  const [PostVideo, setPostVideo] = useState([]);
 
   useEffect(() => {
     if (classData) {
       let unsubscribe = db
-        .collection("videos")
+        .collection("PostVideo")
         .doc("classes")
         .collection(classData.id)
         .onSnapshot((snap) => {
@@ -17,10 +17,10 @@ const PostVideo = ({ classData }) => {
       return () => unsubscribe();
     }
   }, [classData]);
-  console.log(postVideo);
+  console.log(PostVideo);
   return (
     <div>
-      {postVideo.map((item) => (
+      {PostVideo.map((item) => (
         <div className="amt">
           <div className="amt__Cnt">
             <div className="amt__top">

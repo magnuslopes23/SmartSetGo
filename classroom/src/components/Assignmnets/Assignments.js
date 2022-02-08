@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import db from "../../lib/firebase";
 import "./style.css";
 const Assignments = ({ classData }) => {
-  const [assignments, setAssignments] = useState([]);
+  const [Assignments, setAssignments] = useState([]);
 
   useEffect(() => {
     if (classData) {
@@ -17,10 +17,10 @@ const Assignments = ({ classData }) => {
       return () => unsubscribe();
     }
   }, [classData]);
-  console.log(assignments);
+  console.log(Assignments);
   return (
     <div>
-      {assignments.map((item) => (
+      {Assignments.map((item) => (
         <div className="amt">
           <div className="amt__Cnt">
             <div className="amt__top">

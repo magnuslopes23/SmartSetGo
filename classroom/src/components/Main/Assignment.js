@@ -12,17 +12,23 @@ const Assignment = ({ classData }) => {
     const [showInput, setShowInput] = useState(false);
     const [inputValue, setInput] = useState("");
     const [image, setImage] = useState(null);
-    // const [value, setValue] = React.useState(0);
+
+    const handleChange = (e) => {
+        if (e.target.files[0]) {
+            setImage(e.target.files[0]);
+        }
+    };
+
     const handleUpload = () => {
         const uploadImage = storage.ref(`images/${image.name}`).put(image);
-
+        console.log("images", uploadImage);
         uploadImage.on("state_changed", () => {
             storage
                 .ref("images")
                 .child(image.name)
                 .getDownloadURL()
                 .then((url) => {
-                    db.collection("assignment")
+                    db.collection("Assignments")
                         .doc("classes")
                         .collection(classData.id)
                         .add({
@@ -33,11 +39,6 @@ const Assignment = ({ classData }) => {
                         });
                 });
         });
-    };
-    const handleChange = (e) => {
-        if (e.target.files[0]) {
-            setImage(e.target.files[0]);
-        }
     };
 
     return (
@@ -84,7 +85,7 @@ const Assignment = ({ classData }) => {
                             onClick={() => setShowInput(true)}
                         >
                             <Avatar />
-                            <div>Submit Your Assignment</div>
+                            <div>Post Your Assignment</div>
                         </div>
                     )}
                 </div>

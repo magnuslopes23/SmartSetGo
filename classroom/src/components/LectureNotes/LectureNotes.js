@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import db from "../../lib/firebase";
 import "./style.css";
 const LectureNotes = ({ classData }) => {
-  const [lectureNotes, setLectureNotes] = useState([]);
+  const [LectureNotes, setLectureNotes] = useState([]);
 
   useEffect(() => {
     if (classData) {
       let unsubscribe = db
-        .collection("notes")
+        .collection("LectureNotes")
         .doc("classes")
         .collection(classData.id)
         .onSnapshot((snap) => {
@@ -17,10 +17,10 @@ const LectureNotes = ({ classData }) => {
       return () => unsubscribe();
     }
   }, [classData]);
-  console.log(lectureNotes);
+  console.log(LectureNotes);
   return (
     <div>
-      {lectureNotes.map((item) => (
+      {LectureNotes.map((item) => (
         <div className="amt">
           <div className="amt__Cnt">
             <div className="amt__top">
