@@ -8,6 +8,7 @@ import Announce from './Announce';
 import Notes from './Notes';
 import Videos from './Videos';
 import Assignment from './Assignment';
+import CodeIde from './CodeIde';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,6 +58,7 @@ export default function BasicTabs( {classData}) {
           <Tab label="Lecture Notes" {...a11yProps(1)} />
           <Tab label="Video Recordings" {...a11yProps(2)} />
           <Tab label="Assignments" {...a11yProps(3)} />
+          <Tab label="Code </>" {...a11yProps(4)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -70,6 +72,9 @@ export default function BasicTabs( {classData}) {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Assignment classData={classData}/>
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <CodeIde/>
       </TabPanel>
     </Box>
   );
