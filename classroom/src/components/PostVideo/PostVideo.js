@@ -27,7 +27,8 @@ const PostVideo = ({ classData }) => {
               <Avatar />
               <div>{item.sender}</div>
             </div>
-            <p className="amt__txt">{item.text}</p>
+            <a href={item.text}>{item.text}</a>
+            {/* <p className="amt__txt">{item.text}</p> */}
             <img className="amt__img" src={item.imageUrl} alt={item.text} />
           </div>
         </div>
